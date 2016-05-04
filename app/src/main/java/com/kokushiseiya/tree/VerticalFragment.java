@@ -29,6 +29,7 @@ public class VerticalFragment extends Fragment {
 
     @Override
     public  void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         setData();
         adapter = new DataAdapter(getActivity(), data);
         coverFlow = (FeatureCoverFlow) getActivity().findViewById(R.id.coverflow);
