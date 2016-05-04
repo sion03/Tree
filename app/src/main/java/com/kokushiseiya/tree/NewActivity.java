@@ -1,6 +1,7 @@
 package com.kokushiseiya.tree;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,8 +34,13 @@ public class NewActivity extends AppCompatActivity {
 
 
     public void handin(View v){
-        //データ保存...未記入
+        //データ保存...未完了
+        Intent intent = getIntent();
+        if(intent != null){
+            String str = intent.getStringExtra("");
 
+            //データをstr+1盤目の子に保存する
+        }
 
         //スクロール画面に戻る
         Slide slide = new Slide();
