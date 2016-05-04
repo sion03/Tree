@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="129dp"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="73dp"
+        android:id="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="42dp"
+        android:text="New Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="399dp"
+        android:background="@drawable/login_button_style"
+        android:id="@+id/login_button" />
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="42dp"
+        android:background="@drawable/singup_button_style"
+        android:text="New Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:id="@+id/singup_button" />
+
+</RelativeLayout>
