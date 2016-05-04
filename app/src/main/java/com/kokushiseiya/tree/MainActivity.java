@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         // Fragmentの動的追加
         android.app.FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        // horizontalFragmentがなければ追加
         if (horizontalFragment == null) {
             horizontalFragment = new HorizontalFragment();
         }
