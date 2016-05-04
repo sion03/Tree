@@ -39,7 +39,7 @@ public class NewActivity extends AppCompatActivity {
         if(intent != null){
             String str = intent.getStringExtra("");
 
-            //データをstr+1盤目の子に保存する
+            //データをstrの子に保存する
         }
 
         //スクロール画面に戻る
