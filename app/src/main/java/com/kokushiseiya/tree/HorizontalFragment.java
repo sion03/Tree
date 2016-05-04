@@ -24,7 +24,7 @@ public class HorizontalFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance)  {
-        return inflater.inflate(R.layout.fragment_vertical, container, false);
+        return inflater.inflate(R.layout.fragment_horizontal, container, false);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class HorizontalFragment extends Fragment {
     public void setData() {
         User user1 = new User("ronnnnn");
         data = new ArrayList<>();
-        data.add(new Idea(user1, "hogehoge", 0, true));
-        data.add(new Idea(user1, "fugefuge", 0, true));
+        data.add(new Idea(user1, "title", "hogehoge"));
+        data.add(new Idea(user1, "title", "fugefuge"));
     }
 }
