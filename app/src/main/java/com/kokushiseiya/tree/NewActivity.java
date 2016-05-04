@@ -37,9 +37,11 @@ public class NewActivity extends AppCompatActivity {
         //データ保存...未完了
         Intent intent = getIntent();
         if(intent != null){
-            String str = intent.getStringExtra("");
+            String str = intent.getStringExtra("parentidea");
 
-            //データをstrの子に保存する
+            //データをstrの子として割り振ったParentIdeaを持たせておく
+
+
         }
 
         //スクロール画面に戻る
