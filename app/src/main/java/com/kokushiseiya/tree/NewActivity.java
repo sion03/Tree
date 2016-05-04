@@ -37,9 +37,9 @@ public class NewActivity extends AppCompatActivity {
 
 
         //スクロール画面に戻る
-        this.finish();
         Slide slide = new Slide();
         slide.setSlideEdge(Gravity.RIGHT);
+        this.finish();
     }
 
     public void close(View v){
