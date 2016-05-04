@@ -22,15 +22,15 @@ public class SignupActivity extends Activity{
         setContentView(R.layout.activity_signup);
         userName = (EditText)findViewById(R.id.signName);
         passWord = (EditText)findViewById(R.id.signPassword);
-        key = getSharedPreferences("UserName", Context.MODE_PRIVATE);
+        key = getSharedPreferences("key", Context.MODE_PRIVATE);
     }
 
     public void signUp(View v){
         String userName_input = userName.getText().toString();
         String passWord_input = passWord.getText().toString();
-
         SharedPreferences.Editor editor = key.edit();
-        editor.putString(passWord_input, userName_input);
+        editor.putString("userName_key", userName_input);
+        editor.putString("passWord_key", passWord_input);
         editor.commit();
 
         Intent intent = new Intent(SignupActivity.this,MainActivity.class);

@@ -5,9 +5,11 @@ package com.kokushiseiya.tree;
  */
 public class Idea {
     private User mUser;
+    private String mTitle;
     private String mText;
     private int mLikeNum;
     private boolean mIsClosed;
+    private String timeStampKey;
 
     /**
      * コンストラクタ
@@ -16,11 +18,22 @@ public class Idea {
      * @param likeNum
      * @param isClosed
      */
-    public Idea(User user, String text, int likeNum, boolean isClosed) {
+    public Idea(User user, String title, String text, int likeNum, boolean isClosed) {
         mUser = user;
+        mTitle = title;
         mText = text;
         mLikeNum = likeNum;
         mIsClosed = isClosed;
+    }
+
+    public Idea(User user, String title, String text) {
+        mUser = user;
+        mTitle = title;
+        mText = text;
+
+        mLikeNum = 0;
+        mIsClosed = false;
+
     }
 
     public User getmUser() {
@@ -33,5 +46,9 @@ public class Idea {
 
     public int getmLikeNum() {
         return mLikeNum;
+    }
+
+    public String getmTitle() {
+        return mTitle;
     }
 }
