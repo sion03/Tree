@@ -20,8 +20,8 @@ public class SignupActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        userName = (EditText)findViewById(R.id.signName);
-        passWord = (EditText)findViewById(R.id.signPassword);
+        userName = (EditText)findViewById(R.id.userName_edit);
+        passWord = (EditText)findViewById(R.id.passWord_edit);
         key = getSharedPreferences("key", Context.MODE_PRIVATE);
     }
 
