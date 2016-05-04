@@ -9,7 +9,12 @@
         android:layout_width="261dp"
         android:layout_height="53dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp" />
+        android:layout_marginTop="129dp"
+        android:background="@drawable/edittext_style"
+        android:hint=" UserName"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#838688"/>
 
     <EditText
         android:id="@+id/passWord_edit"
@@ -17,7 +22,12 @@
         android:layout_height="53dp"
         android:layout_below="@id/userName_edit"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_style"
+        android:hint=" Passwword"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#838688" />
 
     <Button
         android:id="@+id/login_button"
@@ -26,7 +36,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="399dp"
         android:background="@drawable/login_button_style"
-        android:text="New Button" />
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:onClick="logIn"/>
 
     <Button
         android:id="@+id/singup_button"
@@ -35,11 +47,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="460dp"
         android:background="@drawable/signup_button_style"
-        android:text="New Button" />
-
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_vpn_key_black"/>
+        android:text="Sign Up"
+        android:textColor="#81C784"
+        android:onClick="signUp"/>
 
 </RelativeLayout>

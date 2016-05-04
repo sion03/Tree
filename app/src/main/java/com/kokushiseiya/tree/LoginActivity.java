@@ -15,6 +15,8 @@ import android.widget.Toast;
 public class LoginActivity extends Activity {
     EditText userName;
     EditText passWord;
+    String nameKey;
+    String passKey;
     SharedPreferences key;
 
     @Override
@@ -35,11 +37,13 @@ public class LoginActivity extends Activity {
         String userName_login = userName.getText().toString();
         String passWord_login = passWord.getText().toString();
 
-        key = getSharedPreferences(userName_login, Context.MODE_PRIVATE);
-        String strKey = key.getString(passWord_login, "null");
-        if (strKey == "null"){
+        key = getSharedPreferences("key", Context.MODE_PRIVATE);
+        nameKey = key.getString("userName_key", "null");
+        passKey = key.getString("passWord_key", "null");
+
+        if (!nameKey.equals(userName_login) || !passKey.equals(passWord_login)){
             Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
-        }else {
+        }else if (nameKey.equals(userName_login) && passKey.equals(passWord_login)){
             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
             startActivity(intent);
         }

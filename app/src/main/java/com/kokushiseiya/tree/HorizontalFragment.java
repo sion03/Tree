@@ -15,7 +15,7 @@ import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 /**
  * Created by kokushiseiya on 16/05/04.
  */
-public class VerticalFragment extends Fragment {
+public class HorizontalFragment extends Fragment {
 
     private FeatureCoverFlow coverFlow;
     private DataAdapter adapter;
