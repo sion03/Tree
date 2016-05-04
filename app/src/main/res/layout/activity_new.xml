@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/new_close"
                 android:onClick="close"
-                android:src="@mipmap/ic_clear_white_24dp"
+                android:src="@mipmap/ic_clear_black_24dp"
                 android:layout_gravity="right|top"
                 android:layout_weight="0.03" />
         </LinearLayout>
