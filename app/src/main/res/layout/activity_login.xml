@@ -5,19 +5,21 @@
     android:background="#c8e6c9">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/loginName"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp" />
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginPassword"
+        android:hint="User Name" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/loginPassword"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_below="@id/editText"
+        android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
+        android:hint="Password" />
 
     <Button
         android:id="@+id/login_button"
@@ -26,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="399dp"
         android:background="@drawable/login_button_style"
-        android:text="New Button" />
+        android:text="login" />
 
     <Button
         android:id="@+id/singup_button"
@@ -35,11 +37,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="460dp"
         android:background="@drawable/singup_button_style"
-        android:text="New Button" />
+        android:text="sign up" />
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_vpn_key_black"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_vpn_key_black"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton" />
 
 </RelativeLayout>

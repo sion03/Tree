@@ -3,27 +3,30 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#c8e6c9">
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/signPassword"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp" />
+        android:hint="Password"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/signName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/signName"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_below="@id/editText"
+        android:hint="User Name"
+        android:layout_above="@+id/signPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
+        android:layout_marginBottom="75dp" />
 
     <Button
-        android:id="@+id/singup_button"
+        android:id="@+id/signup_button"
         android:layout_width="138dp"
         android:layout_height="42dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="460dp"
         android:background="@drawable/singup_button_style"
-        android:text="New Button" />
+        android:text="sign up"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp" />
 
 </RelativeLayout>
