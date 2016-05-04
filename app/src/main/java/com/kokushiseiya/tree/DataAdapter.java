@@ -24,15 +24,17 @@ public class DataAdapter extends BaseAdapter {
     private AppCompatActivity activity;
 
     private static class ViewHolder {
-        private EditText ideaNote;
+        private TextView ideaTitle;
+        private TextView ideaNote;
         private TextView editer;
         private TextView likeNum;
         private ImageButton likeButton;
         private ImageButton closeButton;
 
         public ViewHolder(View view) {
-            ideaNote = (EditText) view.findViewById(R.id.note);
-            editer = (TextView) view.findViewById(R.id.prop);
+            ideaTitle = (TextView) view.findViewById(R.id.titleText);
+            ideaNote = (TextView) view.findViewById(R.id.textBox);
+            editer = (TextView) view.findViewById(R.id.userName);
             likeNum = (TextView) view.findViewById(R.id.likeNum);
             likeButton = (ImageButton) view.findViewById(R.id.like);
             closeButton = (ImageButton) view.findViewById(R.id.closed);
@@ -65,7 +67,7 @@ public class DataAdapter extends BaseAdapter {
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(android.R.layout.card, null, false);
+            convertView = inflater.inflate(R.layout.card, null, false);
 
             viewHolder = new ViewHolder(convertView);
             convertView.setTag(viewHolder);
@@ -73,10 +75,11 @@ public class DataAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
+        viewHolder.ideaTitle.setText("");
         viewHolder.ideaNote.setText("");
         viewHolder.likeNum.setText("");
         viewHolder.editer.setText("");
-        viewHolder.likeNum.setOnClickListener(new View.OnClickListener() {
+        viewHolder.likeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
