@@ -30,16 +30,7 @@
         android:textColor="#000000"
         android:textColorHint="#838688" />
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="138dp"
-        android:layout_height="42dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="399dp"
-        android:background="@drawable/login_button_style"
-        android:text="Log In"
-        android:textColor="#FFFFFF"
-        android:onClick="logIn" />
+
 
     <Button
         android:id="@+id/signup_button"
