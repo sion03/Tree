@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8e6c9">
 
     <EditText
+        android:id="@+id/loginName"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_marginTop="129dp"
-        android:id="@+id/editText"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginPassword"
+        android:hint="User Name" />
 
     <EditText
+        android:id="@+id/loginPassword"
         android:layout_width="261dp"
         android:layout_height="53dp"
-        android:layout_below="@id/editText"
-        android:layout_marginTop="73dp"
-        android:id="@+id/editText2"
+        android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        />
+        android:hint="Password" />
 
     <Button
+        android:id="@+id/login_button"
         android:layout_width="138dp"
         android:layout_height="42dp"
-        android:text="New Button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="399dp"
         android:background="@drawable/login_button_style"
-        android:id="@+id/login_button" />
+        android:text="login" />
 
     <Button
+        android:id="@+id/singup_button"
         android:layout_width="138dp"
         android:layout_height="42dp"
-        android:background="@drawable/singup_button_style"
-        android:text="New Button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="460dp"
-        android:id="@+id/singup_button" />
+        android:background="@drawable/singup_button_style"
+        android:text="sign up" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_vpn_key_black"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton" />
 
 </RelativeLayout>
