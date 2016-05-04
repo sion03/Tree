@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,7 +12,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        card_view:cardCornerRadius="4dp">
+        card_view:cardCornerRadius="4dp"
+        android:layout_gravity="center"
+        android:elevation="4dp">
 
         <!-- カードに載せる情報 -->
 
@@ -80,4 +82,4 @@
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</FrameLayout>
