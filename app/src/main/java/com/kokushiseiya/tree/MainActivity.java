@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         // Fragmentの動的追加
         android.app.FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        if (horizontalFragment == null) {
-            horizontalFragment = new HorizontalFragment();
+        if (verticalFragment == null) {
+            verticalFragment = new VerticalFragment();
         }
-        fragmentTransaction.add(R.id.fragment_container, horizontalFragment);
+        fragmentTransaction.replace(R.id.fragment_container, verticalFragment);
         fragmentTransaction.commit();
     }
 }
